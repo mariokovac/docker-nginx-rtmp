@@ -10,7 +10,7 @@ RUN apk update \
     && mkdir -p /opt/src /opt/rtmp \
     && cd /opt/src \
     && git clone https://github.com/krallin/tini \
-    && git clone git://github.com/arut/nginx-rtmp-module.git \
+    && git clone git://github.com/mariokovac/docker-nginx-rtmp.git \
     && git clone https://github.com/nginx/nginx.git \
     && cd /opt/src/tini \
     && cmake . && make && make install \
